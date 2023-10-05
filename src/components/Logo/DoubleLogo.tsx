@@ -5,6 +5,7 @@ import CurrencyLogo from './CurrencyLogo'
 const Wrapper = styled.div<{ margin: boolean }>`
   display: flex;
   flex-direction: row;
+  margin-right: 8px;
 `
 
 interface DoubleCurrencyLogoProps {

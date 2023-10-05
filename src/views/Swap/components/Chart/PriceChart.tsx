@@ -62,7 +62,7 @@ const PriceChart = ({
       <Flex justifyContent="space-between" px="24px" position="relative">
         <Flex alignItems="center" position="absolute" right="0" top="10px" mx={4}>
           {outputCurrency ? (
-            <DoubleCurrencyLogo currency0={inputCurrency} currency1={outputCurrency} size={24} margin />
+            <DoubleCurrencyLogo currency0={inputCurrency} currency1={outputCurrency} size={24} />
           ) : (
             inputCurrency && <CurrencyLogo currency={inputCurrency} size="24px" style={{ marginRight: '8px' }} />
           )}
