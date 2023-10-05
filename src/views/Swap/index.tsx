@@ -18,7 +18,7 @@ import PriceChartContainer from './components/Chart/PriceChartContainer'
 
 import SwapForm from './components/SwapForm'
 import StableSwapFormContainer from './StableSwap'
-import { StyledInputCurrencyWrapper, StyledSwapContainer } from './styles'
+import { StyledInputCurrencyWrapper, StyledSwapContainer, StyledFlex } from './styles'
 import SwapTab, { SwapType } from './components/SwapTab'
 
 const CHART_SUPPORT_CHAIN_IDS = [ChainId.BSC]
@@ -39,10 +39,10 @@ export default function Swap() {
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
 
-    if(width > breakpoint){
+    if (width > breakpoint) {
       setIsChartDisplayed(true)
     }
-   
+
   }, [width])
 
   useEffect(() => {
@@ -79,9 +79,9 @@ export default function Swap() {
 
   return (
     <Page removePadding={isChartExpanded} hideFooterOnDesktop={isChartExpanded}>
-      <Flex width="100%" justifyContent="center" position="relative" mt={5}>
-       <Box display={{ base: "none", md: "block"}}>
-       {/* {!isMobile && isChartSupported && ( */}
+      <StyledFlex>
+        <Box display={{ base: "none", md: "block" }} marginBottom="30px" >
+          {/* {!isMobile && isChartSupported && ( */}
           <PriceChartContainer
             inputCurrencyId={inputCurrencyId}
             inputCurrency={currencies[Field.INPUT]}
@@ -92,8 +92,8 @@ export default function Swap() {
             isChartDisplayed={isChartDisplayed}
             currentSwapPrice={singleTokenPrice}
           />
-        {/* )} */}
-       </Box>
+          {/* )} */}
+        </Box>
         {isChartSupported && (
           <BottomDrawer
             content={
@@ -147,7 +147,7 @@ export default function Swap() {
             </Box>
           )}
         </Flex>
-      </Flex>
+      </StyledFlex>
     </Page>
   )
 }

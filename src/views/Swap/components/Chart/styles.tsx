@@ -20,7 +20,7 @@ export const StyledPriceChart = styled(Box)<{
     /* Note: backdrop-filter has minimal browser support */
 
     border-radius: 12px;
-    width: ${({ $isExpanded, $isFullWidthContainer }) => ($isFullWidthContainer || $isExpanded ? '100%' : '775px')};
+    width: ${({ $isExpanded, $isFullWidthContainer }) => ($isFullWidthContainer || $isExpanded ? '95%' : '700px')};
     height: ${({ $isExpanded }) => ($isExpanded ? 'calc(100vh - 100px)' : '516px')};
   }
 `

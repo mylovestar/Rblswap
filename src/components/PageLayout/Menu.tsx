@@ -81,6 +81,7 @@ const Menu: React.FC<IMenuProps> = ({ onUpdateMenuHeight, onMobileSidebarOpen })
           alt="Logo"
           h={{ base: '52px', lg: '52px' }}
           w={{ base: '47px', lg: '47px' }}
+          style={{ maxWidth: 'initial'}}
         />
       </Flex>
       <Box
@@ -167,7 +168,7 @@ const Menu: React.FC<IMenuProps> = ({ onUpdateMenuHeight, onMobileSidebarOpen })
       </Box>
       <Flex flex={1} justify="flex-end" align="center" px={{ base: 2, lg: 8 }}>
         <NetworkSwitcher />
-        <Box mx={2} mt={2}>
+        <Box mt={2}>
           <LangSelector
             currentLang={currentLanguage.code}
             langs={languageList}

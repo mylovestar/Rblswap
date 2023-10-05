@@ -66,6 +66,9 @@ const GlobalStyle = createGlobalStyle`
   }
   .menu-desktop__item[data-v-4754eb8b] {
     margin-right: 4%;
+    @media (max-width: 1200px) {
+      margin-right: 0;
+    }
   }
   .menu-desktop__link[data-v-4754eb8b] {
     display: block;
