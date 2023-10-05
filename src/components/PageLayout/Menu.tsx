@@ -140,7 +140,7 @@ const Menu: React.FC<IMenuProps> = ({ onUpdateMenuHeight, onMobileSidebarOpen })
           <li className="menu-desktop__item" >
             <div className="menu-desktop-sub" data-v-f0c40470 data-v-4754eb8b>
               <span className="menu-desktop-sub__title-btn" data-v-f0c40470>
-                Other projects
+                {t('Other projects')}
                 <i style={{ padding: '0 10px' }}>
                   <TriangleDownIcon />
                 </i>

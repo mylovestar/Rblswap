@@ -254,7 +254,7 @@ export default function SwapForm({ setIsChartDisplayed, isChartDisplayed, isAcce
         />
         <Wrapper id="swap-page" style={{ minHeight: '412px' }}>
           <AutoColumn gap="sm">
-            <Flex flexDirection={{ base: "column", md: "row"}}>
+            <Flex flexDirection={{ base: "column", md: "row"}} justifyContent="center">
               <Flex justifyContent="center">
                 <CurrencyInputPanel
                   label={independentField === Field.OUTPUT && !showWrap && trade ? t('From (estimated)') : t('From')}
