@@ -42,7 +42,7 @@ const fetchFetchPublicDataOld = async ({ pids, chainId }): Promise<[SerializedFa
       {
         // BSC only
         address: getMasterChefAddress(ChainId.BSC),
-        name: 'irsPerBlock',
+        name: 'rblPerBlock',
         params: [true],
       },
     ]),

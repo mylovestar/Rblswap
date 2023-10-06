@@ -281,11 +281,11 @@ const Pools: React.FC<React.PropsWithChildren> = () => {
               {t('Syrup Pools')}
             </Heading>
             <Heading scale="md" color="text">
-              {t('Just stake some tokens to earn.')}
+              {t('Just stake some tokens to earn. High APR, low risk.')}
             </Heading>
-            <Heading scale="md" color="text">
+            {/* <Heading scale="md" color="text">
               {t('High APR, low risk.')}
-            </Heading>
+            </Heading> */}
           </Flex>
           <Image src="/images/pool-logo.png" alt="farm" h="228px" w="364px" />
         </Flex>

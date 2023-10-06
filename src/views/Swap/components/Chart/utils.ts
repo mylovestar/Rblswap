@@ -6,6 +6,7 @@ export const getTimeWindowChange = (lineChartData) => {
   if (lineChartData.length > 0) {
     const firstValue = lineChartData.find(({ value }) => !!value && value > 0)?.value ?? 0
     const lastValue = lineChartData[lineChartData.length - 1].value
+    console.log("values", firstValue, lastValue)
     const changeValue = lastValue - firstValue
 
     return {

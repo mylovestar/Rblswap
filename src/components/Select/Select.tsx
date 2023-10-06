@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import styled, { css } from 'styled-components'
 import { ArrowDropDownIcon, Box, BoxProps, Text } from '@pancakeswap/uikit'
+import { useTranslation } from '@pancakeswap/localization'
 
 const DropDownHeader = styled.div`
   width: 100%;
@@ -117,6 +118,7 @@ const Select: React.FunctionComponent<React.PropsWithChildren<SelectProps>> = ({
   const [isOpen, setIsOpen] = useState(false)
   const [optionSelected, setOptionSelected] = useState(false)
   const [selectedOptionIndex, setSelectedOptionIndex] = useState(defaultOptionIndex)
+  const { t } = useTranslation()
 
   const toggling = (event: React.MouseEvent<HTMLDivElement>) => {
     setIsOpen(!isOpen)
@@ -155,7 +157,7 @@ const Select: React.FunctionComponent<React.PropsWithChildren<SelectProps>> = ({
     <DropDownContainer isOpen={isOpen} {...props}>
       <DropDownHeader onClick={toggling}>
         <Text color={!optionSelected && placeHolderText ? 'text' : undefined}>
-          {!optionSelected && !placeHolderText ? 'Sort by' : options[selectedOptionIndex].label}
+          {t(!optionSelected && !placeHolderText ? 'Sort by' : options[selectedOptionIndex].label)}
         </Text>
       </DropDownHeader>
       <ArrowDropDownIcon color="text" onClick={toggling} />

@@ -383,7 +383,7 @@ export default function SwapForm({ setIsChartDisplayed, isChartDisplayed, isAcce
                     </>
                   )}
                 </RowBetween>
-                <Flex >
+                <Flex maxWidth="480px">
                   <Flex align="center">
                     <Text bold color="#34D399" fontWeight="800" fontSize="18px">
                       {allowedSlippage / 100}%
