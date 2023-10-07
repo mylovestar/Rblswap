@@ -42,11 +42,11 @@ const SidebarLink: React.FC<ISidebarLinkProps> = ({ children, pathname, isToBeRe
   return (
     <Link href={{ pathname }} style={{ flex: 1 }} target={isExternal ? '_blank' : ''} {...props}>
       <Flex
-        px={location.pathname === pathname ? 4 : 2}
+        px={location.pathname === pathname ? 2 : 1}
         py={4}
-        mx={{ base: "4px", md: 6}}
+        mx={{ base: "2px", md: 4}}
         pos="relative"
-        justify="space-between"
+        justify="center"
         align="center"
         fontSize="18px"
         fontWeight="500"
