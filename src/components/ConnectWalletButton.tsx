@@ -31,7 +31,7 @@ const ConnectWalletButton = ({ children, ...props }: ButtonProps) => {
 
   return (
     <>
-      <Button style={{ background: colors.secondary, color: colors.default, minWidth: 100 }} onClick={handleClick} {...props}>
+      <Button style={{ background: colors.secondary, color: colors.default, minWidth: 130 }} onClick={handleClick} {...props}>
         {children || <Trans>Connect Wallet</Trans>}
       </Button>
       <WalletModalV2 isOpen={open} wallets={wallets} login={login} onDismiss={() => setOpen(false)} />
