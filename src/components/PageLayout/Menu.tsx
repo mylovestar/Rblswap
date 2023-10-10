@@ -188,7 +188,7 @@ const Menu: React.FC<IMenuProps> = ({ onUpdateMenuHeight, onMobileSidebarOpen })
             color={colors.default}
             bg={colors.secondary}
             _hover={{ bgColor: colors.default, opacity: 0.6 }}
-            style={{minWidth: 100}}
+            style={{minWidth: 130}}
           >
             {truncateHash(account)}
           </Button>
